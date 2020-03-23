@@ -6,29 +6,30 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0005_customtext_hghghghg'),
+        ("home", "0005_customtext_hghghghg"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Testtt',
+            name="Testtt",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('testt', models.BinaryField()),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("testt", models.BinaryField()),
             ],
         ),
-        migrations.RenameField(
-            model_name='testing',
-            old_name='nhh',
-            new_name='test',
-        ),
-        migrations.RemoveField(
-            model_name='customtext',
-            name='hghghghg',
-        ),
+        migrations.RenameField(model_name="testing", old_name="nhh", new_name="test",),
+        migrations.RemoveField(model_name="customtext", name="hghghghg",),
         migrations.AddField(
-            model_name='customtext',
-            name='name',
+            model_name="customtext",
+            name="name",
             field=models.BinaryField(blank=True, null=True),
         ),
     ]
